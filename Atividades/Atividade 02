@@ -1,1 +1,34 @@
+$ ls ~/.ssh
+ls: cannot access '/c/Users/anacr/.ssh': No such file or directory
 
+anacr@LAPTOP-212JLAF8 MINGW64 ~ (master)
+$ ssh-keygen -t ed25519 -C "crisley.martins10@aluno.ifce.edu.br"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/anacr/.ssh/id_ed25519):
+Created directory '/c/Users/anacr/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/anacr/.ssh/id_ed25519
+Your public key has been saved in /c/Users/anacr/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:XAAvab7ODVKAQXwA8+Ctnd9SbPJdTRfQ7JZtTEHDnB0 crisley.martins10@aluno.ifce.edu.br
+The key's randomart image is:
++--[ED25519 256]--+
+|+++.  ...    .BE=|
+|.+oo.  o .     *=|
+| .oo. + . .  ..+o|
+|  o .+.o .  o .++|
+| . o .o+S  . ... |
+|    ..*.. .      |
+|    .ooo .       |
+|     +.o         |
+|      o .        |
++----[SHA256]-----+
+
+anacr@LAPTOP-212JLAF8 MINGW64 ~ (master)
+$ ~/.ssh/id_ed25519.pub
+/c/Users/anacr/.ssh/id_ed25519.pub: line 1: ssh-ed25519: command not found
+
+anacr@LAPTOP-212JLAF8 MINGW64 ~ (master)
+$ cat ~/.ssh/id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHl5F8iRGqK+sOk0TOjFRyoMuOx+kJ0FzsRQS8A77nwi crisley.martins10@aluno.ifce.edu.br
